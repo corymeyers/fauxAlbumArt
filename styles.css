@@ -1,3 +1,57 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
 
+header {
+  color: white;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center; }
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+  .main-content .left-content {
+    align-items: center;
+    color: white;
+    order: 1; }
+    .main-content .left-content ul {
+      padding: 10px;
+      align-items: center;
+      justify-content: center; }
+      .main-content .left-content ul li {
+        list-style-type: none;
+        align-items: center;
+        font-size: 3em; }
+  .main-content .right-content {
+    align-items: center;
+    color: white;
+    order: 3; }
+    .main-content .right-content ul {
+      padding: 10px;
+      align-items: center;
+      justify-content: center; }
+      .main-content .right-content ul li {
+        list-style-type: none;
+        align-items: center;
+        font-size: 3em; }
+  .main-content .center-content {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+    min-width: 500px; }
+
+img {
+  max-width: 32%;
+  justify-content: space-between;
+  margin: .5%; }
 
 /*# sourceMappingURL=styles.css.map */
