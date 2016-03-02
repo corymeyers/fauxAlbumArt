@@ -5,6 +5,9 @@ body {
   flex: 1;
   max-width: 1000px;
   margin: auto; }
+  @media (min-width: 1200px) {
+    body {
+      max-width: 1800px; } }
 
 header {
   color: white;
@@ -13,52 +16,74 @@ header {
   margin: 0 auto;
   text-align: center;
   padding-top: 25px; }
+  @media (min-width: 1200px) {
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-around; }
+      header .emergency-fundraiser {
+        display: none; }
+      header .header-paragraph {
+        font-size: 24px; } }
 
 .main-content {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  color: white; }
+  .main-content p, .main-content h3 {
+    display: none; }
+  @media (min-width: 1200px) {
+    .main-content {
+      flex-direction: column; }
+      .main-content p, .main-content h3 {
+        display: inline-flex; } }
   .main-content .left-content {
     align-items: center;
     color: white;
     order: 1; }
-    .main-content .left-content ul {
-      padding: 10px;
-      align-items: center;
-      justify-content: center; }
-      .main-content .left-content ul li {
-        list-style-type: none;
-        align-items: center;
-        font-size: 3em; }
+  .main-content .center-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    order: 2;
+    min-width: 500px;
+    max-width: 1400px;
+    justify-content: center; }
+    .main-content .center-content div img, .main-content .center-content h3, .main-content .center-content p {
+      flex-wrap: wrap;
+      width: 150px;
+      height: 150px;
+      flex-direction: column; }
+      @media (min-width: 1200px) {
+        .main-content .center-content div img, .main-content .center-content h3, .main-content .center-content p {
+          display: flex;
+          flex-wrap: wrap;
+          height: auto; } }
   .main-content .right-content {
     align-items: center;
     color: white;
     order: 3; }
-    .main-content .right-content ul {
-      padding: 10px;
-      align-items: center;
-      justify-content: center; }
-      .main-content .right-content ul li {
-        list-style-type: none;
-        align-items: center;
-        font-size: 3em; }
-  .main-content .center-content {
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-    align-items: center;
-    justify-content: center;
-    flex: 5;
-    min-width: 500px; }
-
-img {
-  max-width: 32%;
-  justify-content: space-between;
-  margin: .5%; }
 
 footer {
   display: flex;
   justify-content: center; }
+
+.main-content .left-content ul, .main-content .right-content ul {
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around; }
+  @media (min-width: 1200px) {
+    .main-content .left-content ul, .main-content .right-content ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 900px; } }
+.main-content .left-content li, .main-content .right-content li {
+  list-style-type: none;
+  align-items: center;
+  font-size: 3em; }
 
 /*# sourceMappingURL=styles.css.map */

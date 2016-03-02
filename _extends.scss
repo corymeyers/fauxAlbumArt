@@ -1,0 +1,21 @@
+%sidebars{
+  ul {
+      padding: 10px;
+      align-items: center;
+      justify-content: space-around;
+
+        @media (min-width:1200px){
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 900px;
+        }
+    }
+
+    li{
+      list-style-type: none;
+      align-items: center;
+      font-size: 3em;
+
+    }
+  }
